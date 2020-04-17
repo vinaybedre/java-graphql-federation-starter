@@ -5,7 +5,6 @@ public class Product {
     private final String name;
     private final Integer price;
     private final Integer weight;
-    private Integer fieldx;
 
     public Product(String upc, String name, Integer price, Integer weight) {
         this.upc = upc;
@@ -28,13 +27,5 @@ public class Product {
 
     public Integer getWeight() {
         return weight;
-    }
-
-    public Integer getFieldx() {
-        return fieldx;
-    }
-
-    public void setFieldx(Integer fieldx) {
-        this.fieldx = fieldx;
     }
 }

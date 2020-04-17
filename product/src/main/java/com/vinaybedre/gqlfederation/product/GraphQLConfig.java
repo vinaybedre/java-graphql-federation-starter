@@ -22,7 +22,6 @@ public class GraphQLConfig {
                             if ("Product".equals(values.get("__typename"))) {
                                 final Object upc = values.get("upc");
                                 if (upc instanceof String) {
-                                    System.out.println("upc is "+upc);
                                     return productService.lookupProduct((String) upc);
                                 }
                             }
